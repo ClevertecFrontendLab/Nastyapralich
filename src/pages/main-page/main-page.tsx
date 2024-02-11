@@ -7,7 +7,6 @@ import { Card } from '@components/cards';
 import { CardType } from '@components/cards/cards';
 import { CalendarFilled, HeartFilled, ProfileFilled } from '@ant-design/icons';
 import { NavBar } from '@components/navbar';
-import { Footer } from '@components/footer';
 
 
 export const MainPage: React.FC = () => {
@@ -36,12 +35,12 @@ export const MainPage: React.FC = () => {
                                     </li>
                                     <li>
                                         — создавать свой профиль, где ты можешь загружать свои фото,
-                                        видео и отзывы о тренировках;   
+                                        видео и отзывы о тренировках;
                                     </li>
                                     <li>
                                         — выполнять расписанные тренировки для разных частей тела,
                                         следуя подробным инструкциям и советам профессиональных
-                                        тренеров.   
+                                        тренеров.
                                     </li>
                                 </ul>
                             </div>
@@ -81,9 +80,7 @@ export const MainPage: React.FC = () => {
                                     <p className={style.iconText}>Профиль</p>
                                 </div>
                             </Card>
-
                         </div>
-                         <Footer />
                     </PageContainer>
                    
                 </div>

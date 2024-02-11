@@ -3,6 +3,10 @@
 .mainPageContainer{
 width: 100%;
 display: flex;
+background: url('../../components/assets/1440_default.png');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
 }
 
 .smallCardsConatiner{
