@@ -3,7 +3,7 @@
 .big {
     border-radius: 2px;
     width: 752px;
-    height: 216px;
+    // height: 216px;
     box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
     background: $character-light-primary-inverse;
     padding: 24px;
@@ -17,22 +17,40 @@
         line-height: 130%;
         color: $primary-light-9;
     }
-   
-        }
 
- @media (max-width: 835px) {
-        .big{
-            border-radius: 2px;
-            width: 578px;
-            ul li{
-                font-family: $font-family;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 130%;
-    color: $primary-light-9;
-            }
+}
+
+@media (max-width: 835px) {
+    .big {
+        border-radius: 2px;
+        width: 578px;
+
+        ul li {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: $primary-light-9;
         }
     }
+}
+
+
+@media (max-width: 362px) {
+    .big {
+        padding: 16px;
+        width: 360px;
+
+        ul li {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: $primary-light-9;
+        }
+    }
+}
+
 
 .small {
     border-radius: 2px;
@@ -46,50 +64,105 @@
 
     p {
         font-family: $font-family;
-font-weight: 400;
-font-size: 16px;
-line-height: 130%;
-color: $character-light-title-85;
-text-align: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $character-light-title-85;
+        text-align: center;
     }
-    }
-
-@media (max-width: 835px) {
-    .small{
-        border-radius: 2px;
-width: 182px;
-    }
-}
-.medium{
-border-radius: 2px;
-width: 752px;
-height: 126px;
-padding: 24px;
-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
-background: $character-light-primary-inverse;
-margin-left: 25px;
-p{
-    font-family: $font-family;
-font-weight: 500;
-font-size: 20px;
-line-height: 130%;
-color: $character-light-title-85;
-width: 704px;
-height: 78px;
 }
 
-}
-@media (max-width: 835px) {
-    .medium{
+@media (max-width: 362px) {
+    .small {
         border-radius: 2px;
-width: 578px;
-p{
-    width: 530px;
-    font-family: $font-family;
-font-weight: 500;
-font-size: 20px;
-line-height: 130%;
-color: $character-light-title-85;
+        width: 182px;
+    }
 }
+
+.medium {
+    border-radius: 2px;
+    width: 752px;
+    height: 126px;
+    padding: 24px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+    background: $character-light-primary-inverse;
+    margin-left: 25px;
+
+    p {
+        font-family: $font-family;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 130%;
+        color: $character-light-title-85;
+        width: 704px;
+        height: 78px;
+    }
+
+}
+
+@media (max-width: 370px) {
+    .small {
+        // padding: 16px;
+        width: 328px;
+
+        ul li {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            color: $primary-light-9;
+        }
+    }
+}
+
+@media (max-width: 835px) {
+    .medium {
+        border-radius: 2px;
+        width: 578px;
+
+        p {
+            width: 530px;
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            color: $character-light-title-85;
+        }
+    }
+}
+
+
+
+@media (max-width: 835px) {
+    .medium {
+        border-radius: 2px;
+        width: 578px;
+
+        p {
+            width: 530px;
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            color: $character-light-title-85;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .medium {
+        border-radius: 2px;
+        padding: 6px;
+        width: 328px;
+        height: 188px;
+
+        p {
+            width: 300px;
+            font-family: $font-family;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            color: $character-light-title-85;
+        }
     }
 }

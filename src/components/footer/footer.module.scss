@@ -69,4 +69,17 @@
     }
 }}
 
+@media (max-width: 360px) {
+    .footerContainer {
+        padding: 0px 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+}
+.footerCard {
+    border-radius: 2px;
+    width: 240px;
+}
+}
 

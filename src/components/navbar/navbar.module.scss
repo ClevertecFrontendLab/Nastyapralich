@@ -21,6 +21,9 @@
             gap: 25px;
         }
     }
+    @media screen and (max-width:370px){
+        margin-left: -64px;
+    }
 }
 .container {
     width: 208px; 
@@ -72,6 +75,13 @@ position: absolute;
 top: 50%;
 right: -20px;
 cursor: pointer;
+
+@media screen and (max-width: 365px)  {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    cursor: pointer;
+}
 }
 
 .iconsWrap{
@@ -79,4 +89,28 @@ cursor: pointer;
     justify-content: start;
     align-items: center;
     gap: 20px;
+}
+
+@media (max-width: 362) {
+    .mainContainer{
+        position: relative; 
+   } 
+   .sidemenu{
+    position: absolute;
+    top: 0;
+    right: -20px;
+    cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 362) {
+    .mainContainer{
+        position: relative; 
+   } 
+   .sidemenu{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    cursor: pointer;
+    }
 }

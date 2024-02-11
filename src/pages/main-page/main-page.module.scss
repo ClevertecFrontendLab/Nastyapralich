@@ -56,3 +56,25 @@ color: $primary-light-6;
     }
     
 }
+
+@media (max-width: 360px) {
+    .mainPageContainer{
+        width: 100%;
+        display: flex;
+        background: url('../../components/assets/1440_default.png');
+        background-repeat: repeat;
+        background-position: center;
+        background-size: cover;
+        }
+        
+    .smallCardsConatiner{
+        // margin-left: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        gap: 10px;
+    
+    }
+    
+}
