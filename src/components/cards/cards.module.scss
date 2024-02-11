@@ -1,0 +1,59 @@
+@import '../assets/colors.scss';
+
+.big {
+    border-radius: 2px;
+    width: 752px;
+    height: 216px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+    background: $character-light-primary-inverse;
+    padding: 24px;
+    margin-top: 30px;
+    margin-left: 25px;
+
+    ul li {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $primary-light-9;
+    }
+}
+
+.small {
+    border-radius: 2px;
+    width: 240px;
+    height: 101px;
+    box-shadow: inset 0 1px 0 0 $character-light-dividers;
+    background: $character-light-primary-inverse;
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+
+    p {
+        font-family: $font-family;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: $character-light-title-85;
+text-align: center;
+    }
+}
+
+.medium{
+border-radius: 2px;
+width: 752px;
+height: 126px;
+padding: 24px;
+box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.04);
+background: $character-light-primary-inverse;
+margin-left: 25px;
+p{
+    font-family: $font-family;
+font-weight: 500;
+font-size: 20px;
+line-height: 130%;
+color: $character-light-title-85;
+width: 704px;
+height: 78px;
+}
+}

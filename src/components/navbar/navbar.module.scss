@@ -1,0 +1,82 @@
+@import '../assets/colors.scss';
+
+.mainContainer{
+     position: relative; 
+} 
+
+.closeContainer{
+    width: 64px;
+    height: 100vh;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background: $character-light-primary-inverse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; 
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            text-align: center;
+            gap: 25px;
+        }
+    }
+}
+.container {
+    width: 208px; 
+    height: 100vh;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background: $character-light-primary-inverse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; 
+
+    .logo {
+        padding: 30px 0px 0px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 40px;
+        list-style: none;
+        padding: 0px 16px;
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+           
+            width: 100%;
+            height: 42px;
+            p{
+            margin-left: 10px;
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $character-light-title-85;
+        }
+        .icon{
+            width: 12px;
+height: 12px;
+background: $primary-light-9;
+        }
+    }
+}
+}
+
+.sidemenu{
+position: absolute;
+top: 50%;
+right: -20px;
+cursor: pointer;
+}
+
+.iconsWrap{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+}

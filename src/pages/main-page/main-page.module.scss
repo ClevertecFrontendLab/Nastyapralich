@@ -1,0 +1,41 @@
+@import '../../components/assets/colors.scss';
+
+.mainPageContainer{
+width: 100%;
+display: flex;
+}
+
+.smallCardsConatiner{
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+}
+
+.smallIcons{
+    // margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.iconsText{
+font-family: $font-family;
+font-weight: 400;
+font-size: 14px;
+line-height: 130%;
+text-align: center;
+color: $primary-light-6;
+}
+
+.list{
+    list-style: none;
+}
