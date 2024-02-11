@@ -15,7 +15,6 @@ export const NavBar: React.FC = () => {
         setIsOpened(!isOpen);
     };
     return (
-        <div className={style.mainContainer}>
             <div className={isOpen ? style.container : style.closeContainer}>
                 <div className={style.logo}>
                     {isOpen ? (
@@ -78,6 +77,5 @@ export const NavBar: React.FC = () => {
                     <img src='src\components\assets\sidemenu-fixed-switcher.png' alt='sidemenu' />
                 </div>
             </div>
-        </div>
     );
 };

@@ -1,15 +1,10 @@
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
+
 .pageContainerMain{
     padding: 0px 0px 42px 0px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    flex: 1;
     box-sizing: border-box;
-    padding-left: 210px;
+    flex: 1;
 }
 

@@ -2,13 +2,12 @@
 
 
 .headerContainer {
-    // width: 100%;
+    width: 100%;
     background-color: $primary_light-1;
-    padding-left: 220px;
 
     .headerContainerMain {
         padding: 16px 24px;
-        max-width:1376px;;
+        max-width: 1376px;
         height: 168px;
         margin: 0 auto;
 
@@ -19,15 +18,15 @@
             line-height: 130%;
             color: $character-light-title-85;
             width: 129px;
-height: 32px;
+            height: 32px;
         }
 
         .headerText {
             display: flex;
             justify-content: space-between;
             padding: 6px 0px;
-width: 1055px;
-height: 110px;
+            width: 1055px;
+            height: 110px;
 
             p {
                 font-family: $font-family;
