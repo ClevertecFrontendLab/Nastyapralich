@@ -44,3 +44,15 @@ color: $primary-light-6;
 .list{
     list-style: none;
 }
+
+@media (max-width: 834px) {
+    .mainPageContainer{
+    width: 100%;
+    display: flex;
+    background: url('../../components/assets/1440_default.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+    
+}

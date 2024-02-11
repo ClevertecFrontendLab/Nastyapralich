@@ -6,7 +6,7 @@
 
 .closeContainer{
     width: 64px;
-    height: 100vh;
+    min-height: 100vh;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     background: $character-light-primary-inverse;
     display: flex;
