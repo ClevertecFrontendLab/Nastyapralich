@@ -8,6 +8,7 @@ import {
   ProfileFilled,
   TrophyOutlined,
 } from '@ant-design/icons';
+import { Exit } from '@components/assets/exit/exit';
 
 export const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -78,11 +79,11 @@ export const NavBar: React.FC = () => {
       <div>
       {isOpen && !isMobile ? (
   <div className={style.iconsWrap}>
-    <LogoutOutlined />
+    <Exit />
     <p>Выход</p>
   </div>
 ) : !isOpen && !isMobile ? (
-  <LogoutOutlined />
+  <Exit />
 ) : isMobile && isOpen ? (
   <p>Выход</p>
 ) : null}

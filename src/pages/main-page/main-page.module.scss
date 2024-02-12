@@ -59,7 +59,7 @@ color: $primary-light-9;
     }
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
     .mainPageContainer{
     width: 100%;
     display: flex;
@@ -68,7 +68,26 @@ color: $primary-light-9;
     background-position: center;
     background-size: cover;
     }
+
+    .smallCardsConatiner{
+        // margin-left: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+        gap: 16px;
+        max-width: 578px;
     
+    }
+    .smallIcons{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+.iconText{
+    width: 100px;
+}
+    
+    }
 }
 
 @media (max-width: 360px) {

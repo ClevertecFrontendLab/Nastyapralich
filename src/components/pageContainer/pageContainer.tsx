@@ -11,14 +11,12 @@ type PageContainerProps = {
 export const PageContainer: React.FC<PageContainerProps> = ({ children }) => {
     return (
             <div className={style.pageContainerMain}>
-               
-               <div>
                 <Header
                     text={
                         'Приветствуем тебя в CleverFit — приложении, которое поможет тебе добиться своей мечты!'
                     }
                 />
-                </div> 
+
                 {children}
                 <div>
                   <Footer />  

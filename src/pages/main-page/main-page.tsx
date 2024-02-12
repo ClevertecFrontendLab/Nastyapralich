@@ -55,7 +55,7 @@ export const MainPage: React.FC = () => {
                     </Card>
                     <Card type={CardType.small}>
                         <div>
-                            <p>Назначить календарь</p>
+                            <p className={style.smallText}>Назначить календарь</p>
                         </div>
                         <div className={style.smallIcons}>
                             <div>

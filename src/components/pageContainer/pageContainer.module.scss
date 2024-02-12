@@ -8,17 +8,27 @@
     flex: 1;
 }
 
-@media (max-width: 834px) {
+@media (max-width: 835px) {
     .pageContainerMain{
         padding: 0px 0px 42px 0px;  
+        align-items: center;
+        justify-content: space-between;
+        &:first-child{
+            gap: 0;
+        }
     }
   
 }
 
 @media (max-width: 365px) {
     .pageContainerMain{
+        max-width: 359px;
         padding: 0px 0px 42px 0px;
-        align-items: start;  
+        // align-items: start;
+        justify-content: center;
+        &:first-child{
+            gap: 0;
+        }
     }
   
 }

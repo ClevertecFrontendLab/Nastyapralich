@@ -3,6 +3,7 @@
 .footerContainer {
     padding: 0px 24px;
     display: flex;
+    max-width: 1000px;
     // justify-content: space-around;
     @media (max-width: 835px) {
          margin-top: 200px;
@@ -12,12 +13,12 @@
         border-radius: 2px;
         padding: 6px 15px;
         width: 171px;
-        height: 40px;
         font-family: $font-family;
         font-weight: 400;
         font-size: 16px;
         line-height: 130%;
         text-align: center;
+        align-self: flex-end;
         color: $primary-light-6;
     }
 
@@ -78,16 +79,19 @@
 
 @media (max-width: 360px) {
     .footerContainer {
-        width: 328px;
-        // padding: 0px 24px;
+        max-width: 360pxpx;
+        padding: 0px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
+        p{
+            margin: 0 auto;
+        }
 .footerCard {
     border-radius: 2px;
-    width: 100%;
+    width: 328px;
     margin: 0 auto;
     text-align: center;
     span{

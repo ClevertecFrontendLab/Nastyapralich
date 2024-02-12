@@ -66,12 +66,12 @@
 
 @media  screen and (max-width: 370px){
     .headerContainer{
-        width: 100%;
+        max-width: 370px;
     }
     .headerContainerMain{
         padding: 16px 24px;
-        width: 312px;
-        height: 190px;
+        max-width: 312px;
+        // height: 190px;
     
     .headerText{
         padding: 6px 0px;
