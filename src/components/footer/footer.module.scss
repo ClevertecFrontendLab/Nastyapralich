@@ -21,7 +21,7 @@
     .footerCard {
         border-radius: 2px;
         width: 240px;
-        margin-left: 650px;
+        margin-left: 600px;
         box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.02);
         background: $character-light-primary-inverse;
 
@@ -76,10 +76,12 @@
         flex-direction: column;
         justify-content: start;
         align-items: start;
-}
+        margin: 0 auto;
 .footerCard {
     border-radius: 2px;
     width: 240px;
+    margin: 0 auto;
+}
 }
 }
 

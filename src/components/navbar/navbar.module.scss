@@ -27,7 +27,7 @@
 }
 .container {
     width: 208px; 
-    height: 100vh;
+    min-height: 100vh;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
     background: $character-light-primary-inverse;
     display: flex;
@@ -91,22 +91,14 @@ cursor: pointer;
     gap: 20px;
 }
 
-@media (max-width: 362) {
-    .mainContainer{
-        position: relative; 
-   } 
-   .sidemenu{
-    position: absolute;
-    top: 0;
-    right: -20px;
-    cursor: pointer;
-    }
-}
 
 @media screen and (max-width: 362) {
     .mainContainer{
         position: relative; 
    } 
+   .container{
+    position: fixed;
+   }
    .sidemenu{
     position: absolute;
     top: 0;

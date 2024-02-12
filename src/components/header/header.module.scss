@@ -63,23 +63,30 @@
         }
     }
 }
+
 @media  screen and (max-width: 370px){
     .headerContainer{
         width: 100%;
     }
     .headerContainerMain{
-        padding: 6px 0px;
-        width: 280px;
-    }
+        padding: 16px 24px;
+        width: 312px;
+        height: 190px;
+    
     .headerText{
+        width: 312px;
+        // display: block;
         p{
-            font-family: $font-family;
+width: 280px;
+font-family: $font-family;
 font-weight: 500;
-font-size: 14px;
+font-size: 20px;
 line-height: 130%;
 color: $character-light-title-85;
+margin-top: 5px;
         }
     }
+}
 }
 }
 
