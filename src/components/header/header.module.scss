@@ -74,8 +74,11 @@
         height: 190px;
     
     .headerText{
-        width: 312px;
+        padding: 6px 0px;
         // display: block;
+        .headerSettings{
+            width: 32px;
+        }
         p{
 width: 280px;
 font-family: $font-family;
@@ -90,3 +93,6 @@ margin-top: 5px;
 }
 }
 
+.headerSettings{
+    display: flex;
+}

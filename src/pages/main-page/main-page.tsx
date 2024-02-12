@@ -14,7 +14,7 @@ export const MainPage: React.FC = () => {
             <PageContainer>
                 <Card type={CardType.big}>
                     <div>
-                        <p>С CleverFit ты сможешь</p>
+                        <p className={style.predList}>С CleverFit ты сможешь</p>
                         <ul className={style.list}>
                             <li>
                                 — планировать свои тренировки на календаре, выбирая тип и уровень

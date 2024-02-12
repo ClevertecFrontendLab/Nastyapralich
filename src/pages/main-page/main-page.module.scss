@@ -40,9 +40,23 @@ line-height: 130%;
 text-align: center;
 color: $primary-light-6;
 }
-
+.predList{
+    font-family: $font-family;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: $primary-light-9;
+}
 .list{
     list-style: none;
+    padding: 0;
+    li{
+        font-family: $font-family;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+color: $primary-light-9;
+    }
 }
 
 @media (max-width: 834px) {
@@ -75,6 +89,8 @@ color: $primary-light-6;
         justify-content:center;
         align-items: center;
         gap: 10px;
+        margin: 0 auto;
+        
     
     }
     

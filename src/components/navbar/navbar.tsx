@@ -24,9 +24,9 @@ export const NavBar: React.FC = () => {
       <div className={style.logo}>
         {isOpen && !isMobile ?  (
           <img src='src/components/assets/logo.png' alt='logo' />
-        ) : (
-          <img src='src/components/assets/smallLogo.png' alt='logo' />
-        )}
+        ) : isMobile && isOpen ? (
+          <img src='src/components/assets/logoMini.png' alt='logo' />
+        ): <img src='src/components/assets/smallLogo.png' alt='logo' />}
         <div>
           {isOpen ? (
             <ul>
@@ -76,16 +76,16 @@ export const NavBar: React.FC = () => {
         </div>
       </div>
       <div>
-        {isOpen ? (
-          <div className={style.iconsWrap}>
-            <LogoutOutlined />
-            <p>Выход</p>
-          </div>
-        ) : (
-          <div>
-            <LogoutOutlined />
-          </div>
-        )}
+      {isOpen && !isMobile ? (
+  <div className={style.iconsWrap}>
+    <LogoutOutlined />
+    <p>Выход</p>
+  </div>
+) : !isOpen && !isMobile ? (
+  <LogoutOutlined />
+) : isMobile && isOpen ? (
+  <p>Выход</p>
+) : null}
       </div>
       <div
         data-test-id={isMobile ? 'sider-switch-mobile' : "sider-switch"}

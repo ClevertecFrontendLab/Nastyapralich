@@ -15,7 +15,7 @@ export const Header: React.FC<HeaderProps> = ({text}) => {
          <span>Главная</span>
         <div className={style.headerText}>
          <p>{text}</p>
-         {isMobile? <span> <SettingFilled /> </span>:<span>Настройки</span>}
+         {isMobile? <span className={style.headerSettings}> <SettingFilled /> </span>: ( <span className={style.headerSettings}><SettingFilled /> Настройки</span>)}
         </div>
         </div>
         
