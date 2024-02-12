@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive'
 import style from './navbar.module.scss';
 import {
@@ -11,22 +11,8 @@ import {
 
 export const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(true);
-  const [dataTestId, setDataTestId] = useState('');
+
   const isMobile = useMediaQuery({ query: '(max-width: 362px)' })
-  useEffect(() => {
-    const setTestData = () => {
-      let isMobile = window.outerWidth < 370;
-      setDataTestId(isMobile ? 'sider-switch-mobile' : 'sider-switch');
-    };
-
-    setTestData();
-
-    window.addEventListener('resize', setTestData);
-
-    return () => {
-      window.removeEventListener('resize',  setTestData);
-    };
-  }, []);
 
   const onHandleOpen = () => {
     setIsOpen(!isOpen);

@@ -59,6 +59,7 @@ color: $primary-light-6;
 
 @media (max-width: 360px) {
     .mainPageContainer{
+        position: relative;
         width: 100%;
         display: flex;
         background: url('../../components/assets/1440_default.png');

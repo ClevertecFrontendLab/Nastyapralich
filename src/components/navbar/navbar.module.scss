@@ -92,17 +92,21 @@ cursor: pointer;
 }
 
 
-@media screen and (max-width: 362) {
-    .mainContainer{
-        position: relative; 
-   } 
-   .container{
-    position: fixed;
-   }
-   .sidemenu{
-    position: absolute;
-    top: 0;
-    right: 20px;
-    cursor: pointer;
+@media screen and (max-width: 362px) {
+    .mainContainer {
+        position: absolute;
+        top: 0;
+    }
+    .container {
+        position: fixed;
+        position: absolute;
+        top: 0;
+        // right: 64px;
+    }
+    .sidemenu {
+        position: absolute;
+        top: 30px;
+        right: -20px;
+        cursor: pointer;
     }
 }
