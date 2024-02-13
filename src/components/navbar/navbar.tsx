@@ -30,47 +30,47 @@ export const NavBar: React.FC = () => {
         ): <img src='src/components/assets/smallLogo.png' alt='logo' />}
         <div>
           {isOpen ? (
-            <ul>
+            <ul className={style.navbarList}>
              {isMobile ?
              ( <p>Тренировки</p>) :
               (<li>
-                <HeartOutlined />
+                <HeartOutlined className={style.listIcon}/>
                 <p>Тренировки</p>
               </li>)
               }
               {isMobile?
                (<p>Календарь</p>) :
               ( <li>
-                <CalendarFilled />
+                <CalendarFilled className={style.listIcon}/>
                 <p>Календарь</p>
               </li>)
              }
               {isMobile?
                (<p>Достижения</p>) :
               <li>
-                <TrophyOutlined /> 
+                <TrophyOutlined className={style.listIcon}/> 
                 <p>Достижения</p>
               </li>}
               {isMobile? ( <p>Профиль</p>)
               :
               (<li>
-                <ProfileFilled />
+                <ProfileFilled className={style.listIcon}/>
                 <p>Профиль</p>
               </li>)}
             </ul>
           ) : (
             <ul>
               <li>
-                <HeartOutlined />
+                <HeartOutlined className={style.listIcon}/>
               </li>
               <li>
-                <CalendarFilled />
+                <CalendarFilled className={style.listIcon}/>
               </li>
               <li>
-                <TrophyOutlined />
+                <TrophyOutlined className={style.listIcon}/>
               </li>
               <li>
-                <ProfileFilled />
+                <ProfileFilled className={style.listIcon}/>
               </li>
             </ul>
           )}
@@ -80,12 +80,18 @@ export const NavBar: React.FC = () => {
       {isOpen && !isMobile ? (
   <div className={style.iconsWrap}>
     <Exit />
-    <p>Выход</p>
+    <p className={style.exitText}>Выход</p>
   </div>
 ) : !isOpen && !isMobile ? (
-  <Exit />
+  <div className={style.exitWrap}>
+     <Exit />
+  </div>
+ 
 ) : isMobile && isOpen ? (
-  <p>Выход</p>
+  <div className={style.exitText}>
+    <p>Выход</p>
+  </div>
+  
 ) : null}
       </div>
       <div

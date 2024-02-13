@@ -4,7 +4,7 @@ import style from './main-page.module.scss';
 import { PageContainer } from '@components/pageContainer';
 import { Card } from '@components/cards';
 import { CardType } from '@components/cards/cards';
-import { CalendarFilled, HeartFilled, ProfileFilled } from '@ant-design/icons';
+import { CalendarFilled, CalendarOutlined, HeartFilled, ProfileFilled, ProfileOutlined } from '@ant-design/icons';
 import { NavBar } from '@components/navbar';
 
 export const MainPage: React.FC = () => {
@@ -43,34 +43,34 @@ export const MainPage: React.FC = () => {
                 </Card>
                 <div className={style.smallCardsConatiner}>
                     <Card type={CardType.small}>
-                        <div>
-                            <p>Расписать тренировки</p>
+                        <div className={style.smallTextWrap}>
+                            <p >Расписать тренировки</p>
                         </div>
                         <div className={style.smallIcons}>
                             <div>
-                                <HeartFilled />
+                                <HeartFilled className={style.icon}/>
                             </div>
                             <p className={style.iconText}>Тренировки</p>
                         </div>
                     </Card>
                     <Card type={CardType.small}>
-                        <div>
+                        <div className={style.smallTextWrap}>
                             <p className={style.smallText}>Назначить календарь</p>
                         </div>
                         <div className={style.smallIcons}>
                             <div>
-                                <CalendarFilled />
+                                <CalendarOutlined className={style.icon}/>
                             </div>
                             <p className={style.iconText}>Календарь</p>
                         </div>
                     </Card>
                     <Card type={CardType.small}>
-                        <div>
+                        <div className={style.smallTextWrap}>
                             <p>Заполнить профиль</p>
                         </div>
                         <div className={style.smallIcons}>
                             <div>
-                                <ProfileFilled />
+                                <ProfileOutlined className={style.icon}/>
                             </div>
                             <p className={style.iconText}>Профиль</p>
                         </div>

@@ -4,9 +4,10 @@
     padding: 0px 24px;
     display: flex;
     max-width: 1000px;
+
     // justify-content: space-around;
     @media (max-width: 835px) {
-         margin-top: 200px;
+        margin-top: 200px;
     }
 
     p {
@@ -45,10 +46,10 @@
         }
 
         .footerCardIcons {
-            
+
             display: flex;
             padding: 12px 0px;
-             
+
             .footerIconsWrap {
                 border-radius: 2px;
                 padding: 4px 15px;
@@ -66,43 +67,69 @@
             }
         }
     }
-@media (max-width: 835px) {
-    .footerContainer{
-        margin-top: 200px;
+
+    @media (max-width: 835px) {
+        .footerContainer {
+            margin-top: 200px;
+        }
+
+        .footerCard {
+            border-radius: 2px;
+            width: 240px;
+            margin-left: 150px;
+
+            .footerCardIcons {
+                .footerIconsWrap {
+                    padding-left: 10px;
+                    display: flex;
+                    gap: 5px;
+                }
+            }
+        }
     }
-    .footerCard {
-        border-radius: 2px;
-        width: 240px;
-        margin-left: 150px;
-    }
-}}
+}
 
 @media (max-width: 360px) {
     .footerContainer {
-        max-width: 360pxpx;
+        max-width: 360px;
         padding: 0px;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
-        p{
+        // margin-bottom: 50px;
+        gap: 30px;
+
+        p {
             margin: 0 auto;
         }
-.footerCard {
-    border-radius: 2px;
-    width: 328px;
-    margin: 0 auto;
-    text-align: center;
-    span{
-        padding: 0;
-    }
-    .footerCardText {
-        margin: 0 auto;
-        padding: 12px 24px;
-        width: 240px;
-}
-    }
-}
-}
 
+        .footerCard {
+            border-radius: 2px;
+            width: 328px;
+            margin: 0 auto;
+            text-align: center;
+
+            span {
+                padding: 0;
+            }
+
+            .footerCardText {
+                margin: 0 auto;
+                padding: 12px 24px;
+                width: 240px;
+            }
+            .footerCardIcons {
+                justify-content: center;
+            .footerIconsWrap {
+                padding-left: 10px;
+                display: flex;
+                justify-content: center;
+                gap: 5px;
+            }
+        }
+        }
+    }
+    
+}

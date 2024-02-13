@@ -4,6 +4,9 @@
      position: relative; 
 } 
 
+.listIcon{
+    color: $primary-light-9;
+}
 .closeContainer{
     width: 64px;
     min-height: 100vh;
@@ -70,6 +73,7 @@ background: $primary-light-9;
         }
     }
 }
+
 }
 
 
@@ -94,6 +98,12 @@ cursor: pointer;
     gap: 20px;
 }
 
+@media screen and (max-width: 835px){
+    .exitWrap{
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+}
 
 @media screen and (max-width: 362px) {
     .mainContainer {
@@ -110,7 +120,7 @@ cursor: pointer;
         ul {
             margin-top: 40px;
             list-style: none;
-            padding: 0px;
+            padding-left: 4px;
             text-align: left;
             li {
                 margin-bottom: 10px;
@@ -138,5 +148,13 @@ cursor: pointer;
         cursor: pointer;
     }
         }
+    }
+    .exitText{
+        display: flex;
+        justify-content: center;
+
+    }
+    .navbarList{
+padding-left: 4px;
     }
 }

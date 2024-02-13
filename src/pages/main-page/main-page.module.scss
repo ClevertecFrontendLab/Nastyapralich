@@ -1,97 +1,120 @@
 @import '../../components/assets/colors.scss';
 
-.mainPageContainer{
-width: 100%;
-display: flex;
-background: url('../../components/assets/1440_default.png');
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-}
-
-.smallCardsConatiner{
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-}
-
-.smallIcons{
-    // margin-left: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    align-items: center;
-    gap: 10px;
-
-}
-
-.contentContainer{
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    // width: 100%;
-}
-
-.iconsText{
-font-family: $font-family;
-font-weight: 400;
-font-size: 14px;
-line-height: 130%;
-text-align: center;
-color: $primary-light-6;
-}
-.predList{
-    font-family: $font-family;
-font-weight: 400;
-font-size: 16px;
-line-height: 130%;
-color: $primary-light-9;
-}
-.list{
-    list-style: none;
-    padding: 0;
-    li{
-        font-family: $font-family;
-font-weight: 400;
-font-size: 16px;
-line-height: 130%;
-color: $primary-light-9;
-    }
-}
-
-@media (max-width: 835px) {
-    .mainPageContainer{
+.mainPageContainer {
     width: 100%;
     display: flex;
     background: url('../../components/assets/1440_default.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.smallCardsConatiner {
+    max-width: 752px;
+    padding: 10px;
+    // width: 100%;
+    display: flex;
+    // justify-content: cente;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.smallIcons {
+    // margin-left: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    p{
+        color: $primary-light-9;
     }
 
-    .smallCardsConatiner{
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    // width: 100%;
+}
+
+.iconsText {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: center;
+    color: $primary-light-6;
+}
+
+.predList {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: $primary-light-9;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+
+    li {
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        color: $primary-light-9;
+    }
+}
+
+.icon {
+    color: $primary-light-9;
+}
+
+
+@media (max-width: 835px) {
+    .mainPageContainer {
+        width: 100%;
+        display: flex;
+        background: url('../../components/assets/1440_default.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .smallCardsConatiner {
         // margin-left: 15px;
+        max-width: 722px;
         display: flex;
         flex-direction: row;
-        justify-content:center;
+        justify-content: space-between;
         align-items: center;
         gap: 16px;
-        max-width: 578px;
-    
+        // margin-right: 35px;
+        margin-left: 0;
+        margin-right: 0;
+
     }
-    .smallIcons{
+
+    .smallIcons {
         display: flex;
         flex-direction: row;
         gap: 10px;
-.iconText{
-    width: 100px;
-}
-    
+
+        .iconText {
+            width: 100px;
+        }
+
     }
 }
 
 @media (max-width: 360px) {
-    .mainPageContainer{
+    .mainPageContainer {
         position: relative;
         width: 100%;
         display: flex;
@@ -99,18 +122,27 @@ color: $primary-light-9;
         background-repeat: repeat;
         background-position: center;
         background-size: cover;
-        }
-        
-    .smallCardsConatiner{
-        // margin-left: 15px;
+    }
+
+    .smallCardsConatiner {
+        width: 328px;
         display: flex;
         flex-direction: column;
-        justify-content:center;
+        justify-content: center;
         align-items: center;
         gap: 10px;
         margin: 0 auto;
-        
-    
+   
+
     }
-    
+
+    .smallTextWrap{
+        display: flex;
+        justify-content: center;
+        p{
+            text-align: center;
+        }
+        
+    }
+
 }
