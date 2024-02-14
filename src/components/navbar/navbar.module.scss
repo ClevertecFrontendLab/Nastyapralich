@@ -1,0 +1,160 @@
+@import '../assets/colors.scss';
+
+.mainContainer{
+     position: relative; 
+} 
+
+.listIcon{
+    color: $primary-light-9;
+}
+.closeContainer{
+    width: 64px;
+    min-height: 100vh;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background: $character-light-primary-inverse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; 
+    ul{
+        list-style: none;
+        padding: 0;
+        li{
+            text-align: center;
+            gap: 25px;
+            margin-top: 40px;
+        list-style: none;
+        padding: 0px 16px;
+        }
+    }
+    @media screen and (max-width:370px){
+        margin-left: -64px;
+    }
+}
+.container {
+    width: 208px; 
+    min-height: 100vh;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15);
+    background: $character-light-primary-inverse;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative; 
+
+    .logo {
+        padding: 30px 0px 0px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    ul {
+        margin-top: 40px;
+        list-style: none;
+        padding: 0px 16px;
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            
+            width: 100%;
+            p{
+                font-family: $font-family;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 130%;
+                color: $character-light-title-85;
+                margin-left: 10px;
+        }
+        .icon{
+            width: 12px;
+height: 12px;
+background: $primary-light-9;
+        }
+    }
+}
+
+}
+
+
+.sidemenu{
+position: absolute;
+top: 50%;
+right: -20px;
+cursor: pointer;
+
+@media screen and (max-width: 365px)  {
+    position: absolute;
+    top: 20px;
+    right: -20px;
+    cursor: pointer;
+}
+}
+
+.iconsWrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+@media screen and (max-width: 835px){
+    .exitWrap{
+        margin-bottom: 10px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 362px) {
+    .mainContainer {
+        position: absolute;
+        top: 0;
+        width: 106px;
+    }
+    .container {
+        position: fixed;
+        position: absolute;
+        top: 0;
+        width: 106px;
+
+        ul {
+            margin-top: 40px;
+            list-style: none;
+            padding-left: 4px;
+            text-align: left;
+            li {
+                margin-bottom: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                text-align: left;
+                width: 100%;
+                p{
+                    text-align: left;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 130%;
+                    color: $character-light-title-85;
+                    margin-left: 0;
+            }
+       
+        // right: 64px;
+    }
+    .sidemenu {
+        position: absolute;
+        top: 30px;
+        right: -20px;
+        cursor: pointer;
+    }
+        }
+    }
+    .exitText{
+        display: flex;
+        justify-content: center;
+
+    }
+    .navbarList{
+padding-left: 4px;
+    }
+}

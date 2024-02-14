@@ -1,0 +1,119 @@
+@import '../assets/colors.scss';
+
+
+.headerContainer {
+    width: 100%;
+    background-color: $primary_light-1;
+
+    .headerContainerMain {
+        padding: 16px 24px;
+        max-width: 1376px;
+        height: 168px;
+
+        span {
+            font-family: $font-family;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 130%;
+            color: $character-light-title-85;
+            width: 129px;
+            height: 32px;
+        }
+
+        .headerText {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0px;
+            max-width: 1055px;
+            height: 110px;
+
+            p {
+                font-family: $font-family;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 130%;
+                color: $character-light-title-85;
+            }
+        }
+
+    }
+
+    @media screen and (max-width: 835px) {
+        .headerContainer {
+            width: 100%;
+            ;
+        }
+
+        .headerContainerMain {
+            padding: 16px 24px;
+            max-width: 770px;
+
+            .headerText {
+                padding: 8px 0px 0px 0px;
+                max-width: 722px;
+                display: flex;
+                justify-content: space-between;
+
+                p {
+                    max-width: 617px;
+                    // height: 124px;
+                    font-family: $font-family;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 130%;
+                    color: $character-light-title-85;
+                }
+
+                span {
+
+                    width: 105px;
+
+                    margin-top: 10px;
+                    display: flex;
+                    justify-content: center;
+                    font-family: $font-family;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 130%;
+                    text-align: center;
+                    color: $character-light-title-85;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 370px) {
+        .headerContainer {
+            max-width: 370px;
+        }
+
+        .headerContainerMain {
+            padding: 16px 24px;
+            max-width: 312px;
+            // height: 190px;
+
+            .headerText {
+                padding: 6px 0px;
+
+                // display: block;
+                .headerSettings {
+                    width: 32px;
+                }
+
+                p {
+                    width: 280px;
+                    font-family: $font-family;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 130%;
+                    color: $character-light-title-85;
+                    margin-top: 5px;
+                }
+            }
+        }
+    }
+}
+
+.headerSettings {
+    display: flex;
+}
